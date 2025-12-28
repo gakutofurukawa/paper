@@ -1,58 +1,104 @@
 # Citation Map Template
-# 引用マップ: 各章・主張に対応する参考文献を管理
+# Total Slots: X
+# Total Target References: ~Y (approx 1-3 per slot)
 
-# 使い方:
-# 1. 各セクションの claims に主張を追加
-# 2. references に対応する BibTeX キーを記載
-# 3. bin/update_bib.py で refs/ 内のPDFからBibTeXを自動生成可能
+# ========================================
+# 第1章：はじめに
+# ========================================
+- slot_id: S1
+  claim: "主張1の内容"
+  chapter: "1"
+  required: true
+  references:
+    - Author2024a  # コメント
+    - Author2024b  # コメント
+  status: "Full (2/2)"
 
-sections:
-  - section: "01_intro"
-    title: "はじめに"
-    claims:
-      - claim: "背景の主張1"
-        references: []
-      - claim: "研究課題の主張"
-        references: []
+- slot_id: S2
+  claim: "主張2の内容"
+  chapter: "1"
+  required: true
+  references: []
+  status: "Vacant (0/2)"
+  vacancy_note: "参考文献を追加してください"
 
-  - section: "02_related"
-    title: "関連研究"
-    claims:
-      - claim: "関連研究1の説明"
-        references: []
-      - claim: "関連研究2の説明"
-        references: []
-      - claim: "本研究の位置づけ"
-        references: []
+# ========================================
+# 第2章：関連研究
+# ========================================
+- slot_id: S3
+  claim: "関連研究1に関する主張"
+  chapter: "2"
+  required: true
+  references: []
+  status: "Vacant (0/2)"
 
-  - section: "03_problem"
-    title: "問題設定"
-    claims:
-      - claim: "問題の定式化"
-        references: []
+- slot_id: S4
+  claim: "関連研究2に関する主張"
+  chapter: "2"
+  required: false
+  references: []
+  status: "Vacant (0/2)"
 
-  - section: "04_method"
-    title: "提案手法"
-    claims:
-      - claim: "手法1の根拠"
-        references: []
-      - claim: "手法2の根拠"
-        references: []
+# ========================================
+# 第3章：問題設定
+# ========================================
+- slot_id: S5
+  claim: "問題定式化の根拠"
+  chapter: "3"
+  required: true
+  references: []
+  status: "Vacant (0/2)"
 
-  - section: "05_experiment"
-    title: "実験"
-    claims:
-      - claim: "評価指標の根拠"
-        references: []
-      - claim: "実験設計の根拠"
-        references: []
+# ========================================
+# 第4章：提案手法
+# ========================================
+- slot_id: S6
+  claim: "手法1の理論的根拠"
+  chapter: "4"
+  required: true
+  references: []
+  status: "Vacant (0/2)"
 
-  - section: "06_discussion"
-    title: "考察"
-    claims:
-      - claim: "既存研究との比較"
-        references: []
+- slot_id: S7
+  claim: "手法2の理論的根拠"
+  chapter: "4"
+  required: false
+  references: []
+  status: "Vacant (0/2)"
 
-  - section: "07_conclusion"
-    title: "結論"
-    claims: []
+# ========================================
+# 第5章：実験
+# ========================================
+- slot_id: S8
+  claim: "評価指標の根拠"
+  chapter: "5"
+  required: true
+  references: []
+  status: "Vacant (0/2)"
+
+- slot_id: S9
+  claim: "実験設計の根拠"
+  chapter: "5"
+  required: false
+  references: []
+  status: "Vacant (0/2)"
+
+# ========================================
+# 第6章：考察
+# ========================================
+- slot_id: S10
+  claim: "既存研究との比較"
+  chapter: "6"
+  required: true
+  references: []
+  status: "Vacant (0/2)"
+
+# ========================================
+# 第7章：結論
+# ========================================
+- slot_id: S11
+  claim: "結論での参照（通常は不要）"
+  chapter: "7"
+  required: false
+  references: []
+  status: "N/A"
