@@ -1,0 +1,69 @@
+# LaTeX 中間ファイル（src/内で生成されるもの）
+src/*.aux
+src/*.lof
+src/*.log
+src/*.lot
+src/*.fls
+src/*.out
+src/*.toc
+src/*.fmt
+src/*.fot
+src/*.cb
+src/*.cb2
+src/.*.lb
+
+# 中間ドキュメント
+src/*.dvi
+src/*.xdv
+src/*-converted-to.*
+
+# 参考文献関連の中間ファイル
+src/*.bbl
+src/*.bcf
+src/*.blg
+src/*-blx.aux
+src/*-blx.bib
+src/*.run.xml
+
+# ビルドツール関連
+src/*.fdb_latexmk
+src/*.synctex
+src/*.synctex(busy)
+src/*.synctex.gz
+src/*.synctex.gz(busy)
+src/*.pdfsync
+
+# その他の補助ファイル
+src/*.idx
+src/*.ilg
+src/*.ind
+
+# PDF出力（output/latestは除く）
+src/*.pdf
+
+# macOS
+.DS_Store
+
+# 古いoutputディレクトリ（YYYYMMDD形式）
+output/[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/
+
+# 参考文献PDF（個人の論文は含めない）
+refs/*.pdf
+refs/**/*.pdf
+
+# ただしREADMEは含める
+!refs/README.md
+
+# output ディレクトリ以下はすべて無視し、latest は除外
+output/*
+!output/latest/
+
+# IDE / エディタ設定ファイル（必要に応じて有効化）
+.vscode/
+.copilot.json
+.agent/
+.idea/
+*.iml
+
+# macOS の AppleDouble ファイル
+._*

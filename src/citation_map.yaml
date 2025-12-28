@@ -1,0 +1,58 @@
+# Citation Map Template
+# 引用マップ: 各章・主張に対応する参考文献を管理
+
+# 使い方:
+# 1. 各セクションの claims に主張を追加
+# 2. references に対応する BibTeX キーを記載
+# 3. bin/update_bib.py で refs/ 内のPDFからBibTeXを自動生成可能
+
+sections:
+  - section: "01_intro"
+    title: "はじめに"
+    claims:
+      - claim: "背景の主張1"
+        references: []
+      - claim: "研究課題の主張"
+        references: []
+
+  - section: "02_related"
+    title: "関連研究"
+    claims:
+      - claim: "関連研究1の説明"
+        references: []
+      - claim: "関連研究2の説明"
+        references: []
+      - claim: "本研究の位置づけ"
+        references: []
+
+  - section: "03_problem"
+    title: "問題設定"
+    claims:
+      - claim: "問題の定式化"
+        references: []
+
+  - section: "04_method"
+    title: "提案手法"
+    claims:
+      - claim: "手法1の根拠"
+        references: []
+      - claim: "手法2の根拠"
+        references: []
+
+  - section: "05_experiment"
+    title: "実験"
+    claims:
+      - claim: "評価指標の根拠"
+        references: []
+      - claim: "実験設計の根拠"
+        references: []
+
+  - section: "06_discussion"
+    title: "考察"
+    claims:
+      - claim: "既存研究との比較"
+        references: []
+
+  - section: "07_conclusion"
+    title: "結論"
+    claims: []

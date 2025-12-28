@@ -1,0 +1,99 @@
+\documentclass[12pt,a4paper]{jarticle}
+
+% プリアンブル読み込み
+\input{preamble.tex}
+
+\begin{document}
+
+% ========================================
+% タイトルページ
+% ========================================
+\begin{titlepage}
+\begin{center}
+\vspace*{1cm}
+
+{\Large 令和○年度卒業論文}
+
+\vspace{4cm}
+
+{\LARGE 論文タイトル}\\[0.5cm]
+{\LARGE （サブタイトル）}
+
+\vspace{3cm}
+
+主任指導教員\\[0.3cm]
+{\large 指導教員名}
+
+\vspace{2cm}
+
+所属大学\\[0.2cm]
+学部・学科名
+
+\vspace{1cm}
+
+氏名　著者名\\[0.3cm]
+学籍番号　00000000
+
+\vspace{1cm}
+
+提出日　20XX年X月X日
+
+\end{center}
+\end{titlepage}
+
+% ========================================
+% 概要ページ
+% ========================================
+\newpage
+\thispagestyle{empty}
+\begin{center}
+{\large 概要}
+\end{center}
+\vspace{1cm}
+
+\noindent
+% ここに概要を記述
+
+\vspace{6cm}
+
+% 目次
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+
+% 各章の読み込み
+\input{sections/01_intro.tex}
+\newpage
+
+\input{sections/02_related.tex}
+\newpage
+
+\input{sections/03_problem.tex}
+\newpage
+
+\input{sections/04_method.tex}
+\newpage
+
+\input{sections/05_experiment.tex}
+\newpage
+
+\input{sections/06_discussion.tex}
+\newpage
+
+\input{sections/07_conclusion.tex}
+\newpage
+
+% 付録
+\newpage
+\input{sections/90_appendix.tex}
+\newpage
+
+% 参考文献
+\nocite{*}
+\bibliographystyle{junsrt}
+\bibliography{references}
+
+\end{document}
